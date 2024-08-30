@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,17 +30,26 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-VRD3A5SmHf4SWk2kBlGoQ2GhCwOupmMVk1O2rgMZQds+iQu8hXyRR6IvvZURt1o" crossorigin="anonymous">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
+
+
 
 
         <!-- Navbar & Hero Start -->
@@ -61,7 +71,10 @@
                         <a href="#review" class="nav-item nav-link">Review</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Start Free Trial</a>
+                    <button type="button"  class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block cleerError" id="cleerError"
+                        data-bs-toggle="modal" data-bs-target="#myModal" >
+                        Start Free Trial
+                    </button>
                 </div>
             </nav>
 
@@ -69,12 +82,20 @@
                 <div class="container px-lg-5">
                     <div class="row g-5">
                         <div class="col-lg-8 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown">The Revolutionary App That Helps To Control Your Own Fitness</h1>
-                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
-                            <a href="#contact" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                            <h1 class="text-white mb-4 animated slideInDown">The Revolutionary App That Helps To Control
+                                Your Own Fitness</h1>
+                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum
+                                rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam
+                                sit justo amet ipsum vero ipsum clita lorem</p>
+                                <button type="button"  class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" id="cleerError" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Read More
+                                </button>
+                            <a href="#contact"
+                                class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact
+                                Us</a>
                         </div>
-                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                            data-wow-delay="0.3s">
                             <div class="owl-carousel screenshot-carousel">
                                 <img class="img-fluid" src="img/screenshot-1.png" alt="">
                                 <img class="img-fluid" src="img/screenshot-2.png" alt="">
@@ -89,7 +110,6 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
         <!-- About Start -->
         <div class="container-xxl py-5" id="about">
             <div class="container py-5 px-lg-5">
@@ -97,7 +117,9 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">About App</h5>
                         <h1 class="mb-4">#1 App For Your Fitness</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita
+                            erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore
+                            erat amet</p>
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <div class="d-flex">
@@ -139,56 +161,68 @@
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-eye text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">High Resolution</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-layer-group text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Retina Ready</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-edit text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Editable Data</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-shield-alt text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Fully Secured</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-cloud text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Cloud Storage</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                                style="width: 60px; height: 60px;">
                                 <i class="fa fa-mobile-alt text-white fs-4"></i>
                             </div>
                             <h5 class="mb-3">Fully Responsive</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
+                                diam sed stet lorem.</p>
                         </div>
                     </div>
                 </div>
@@ -204,13 +238,17 @@
                     <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium">Screenshot</h5>
                         <h1 class="mb-4">User Friendly interface And Very Easy To Use Fitness App</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita
+                            erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore
+                            erat amet</p>
                         <p><i class="fa fa-check text-primary-gradient me-3"></i>Diam dolor diam ipsum et tempor sit</p>
                         <p><i class="fa fa-check text-primary-gradient me-3"></i>Aliqu diam amet diam et eos labore</p>
-                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Clita erat ipsum et lorem et sit</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Clita erat ipsum et lorem
+                            et sit</p>
                         <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                        data-wow-delay="0.3s">
                         <div class="owl-carousel screenshot-carousel">
                             <img class="img-fluid" src="img/screenshot-1.png" alt="">
                             <img class="img-fluid" src="img/screenshot-2.png" alt="">
@@ -235,29 +273,35 @@
                 <div class="row gy-5 gx-4 justify-content-center">
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
                                 <i class="fa fa-cog fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">Install the App</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
                                 <i class="fa fa-address-card fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">Setup Your Profile</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                                style="width: 100px; height: 100px;">
                                 <i class="fa fa-check fa-3x text-white"></i>
                             </div>
                             <h5 class="mt-4 mb-3">Enjoy The Features</h5>
-                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                            <p class="mb-0">Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat
+                                ipsum et lorem et sit sed stet</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +320,9 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h5 class="text-primary-gradient fw-medium">Download</h5>
                         <h1 class="mb-4">Download The Latest Version Of Our App</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita
+                            erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore
+                            erat amet</p>
                         <div class="row g-4">
                             <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
                                 <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
@@ -312,7 +358,8 @@
                     <h1 class="mb-5">Choose Your Plan</h1>
                 </div>
                 <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
-                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                    <ul
+                        class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
                         <li class="nav-item">
                             <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Monthly</button>
                         </li>
@@ -331,14 +378,23 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>14.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>14.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4" id="cleerError" data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -350,14 +406,24 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>24.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>24.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href=""
+                                                class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4" data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -369,14 +435,23 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>34.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Month</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>34.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Month</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4" id="cleerError" data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -392,14 +467,23 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>114.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>114.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4" id="cleerError" data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -411,14 +495,23 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>124.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>124.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4" id="cleerError" data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -430,14 +523,23 @@
                                         </div>
                                         <div class="p-4 pt-0">
                                             <h1 class="mb-3">
-                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>134.99<small
-                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Yearly</small>
+                                                <small class="align-top"
+                                                    style="font-size: 22px; line-height: 45px;">$</small>134.99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/
+                                                    Yearly</small>
                                             </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                            <div class="d-flex justify-content-between mb-3"><span>HTML5 & CSS3</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i
+                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Responsive
+                                                    Layout</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2"><span>Cross-browser
+                                                    Support</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                            </div>
+                                            <a href=""  id="cleerError" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 " data-bs-toggle="modal" data-bs-target="#myModal">Get
+                                                Started</a>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +562,8 @@
                 <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png"
+                                style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -473,11 +576,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png"
+                                style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -490,11 +595,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png"
+                                style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -507,11 +614,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                     <div class="testimonial-item rounded p-4">
                         <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png" style="width: 85px; height: 85px;">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/User.png"
+                                style="width: 85px; height: 85px;">
                             <div class="ms-4">
                                 <h5 class="mb-1">Client Name</h5>
                                 <p class="mb-1">Profession</p>
@@ -524,7 +633,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et
+                            eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </div>
             </div>
@@ -542,7 +652,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-9">
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
-                          
+
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
@@ -553,7 +663,8 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
@@ -565,12 +676,14 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 150px"></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">
-                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5"
+                                            type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -580,7 +693,7 @@
             </div>
         </div>
         <!-- Contact End -->
-        
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
@@ -616,10 +729,13 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h4 class="text-white mb-4">Newsletter</h4>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non vulpu</p>
                         <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
                         </div>
                     </div>
                 </div>
@@ -648,6 +764,47 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
+    <!-- Login Popup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="modal-box">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content clearfix">
+                                <div class="modal-body">
+                                    <h3 class="title">Login Form</h3>
+                                    <p class="description">Login here Using Email & Password</p>
+                                    <div class="form-group">
+                                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                                        <input type="email" class="form-control" id="UserNameInput" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="input-icon"><i class="fas fa-key"></i></span>
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="form-group checkbox">
+                                        <input type="checkbox">
+                                        <label>Remember me</label>
+                                    </div>
+                                    <button class="btn" type="button" onclick="errorThrow()">Login</button>
+                                    <div id="errorMassage">
+                                        Wrong username or password
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup End -->
+
+
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -660,6 +817,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+        <script src="js/login.js"></script>
+
 </body>
 
 </html>
